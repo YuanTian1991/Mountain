@@ -18,5 +18,6 @@ module.exports = {
       //   component: require.resolve(`./src/layout/index.js`),
       // },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 };
