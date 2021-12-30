@@ -14,9 +14,9 @@ module.exports = {
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-layout`,
-      // options: {
-      //   component: require.resolve(`./src/layout/index.js`),
-      // },
+      options: {
+        component: require.resolve(`./src/layouts/index.js`),
+      },
     },
     `gatsby-plugin-react-helmet`,
   ],

@@ -25,6 +25,8 @@ echo "---
 slug: '/notes/$filename'
 date: '$currentDate'
 title: '$title'
+tag: ''
+location: 'Bath, UK'
 ---
 " >>  $file
 

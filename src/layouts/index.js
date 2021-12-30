@@ -1,15 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useTheme } from "@mui/material/styles";
 import { Link } from "gatsby";
-import { Container, Box, Toolbar, Grid } from "@mui/material";
-import { Helmet } from "react-helmet";
+import {
+  Container,
+  Box,
+  Toolbar,
+  Grid,
+  Typography,
+  useMediaQuery,
+} from "@mui/material";
 
+import "./index.css";
+
+import Footer from "../components/layout/footer";
 import TimeLine from "../components/TimeLine";
 
 const Layout = ({ children }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const theme = useTheme();
+  const isSmallScreen = !useMediaQuery(theme.breakpoints.up("sm"));
+
+  useEffect(() => {
+    console.log("Reload");
+  }, []);
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xl">
       <Box my={1}>
         <Toolbar>
           <Grid container spacing="1" alignItems="center">
@@ -27,7 +42,13 @@ const Layout = ({ children }) => {
                   },
                 }}
               >
-                Mountain
+                <Typography
+                  variant="h6"
+                  component="span"
+                  style={{ fontWeight: 500 }}
+                >
+                  Mountain the Westie
+                </Typography>
               </Link>
             </Grid>
           </Grid>
@@ -40,30 +61,30 @@ const Layout = ({ children }) => {
           item
           xs={12}
           md={3}
-          id="container1"
+          id="parentDiv"
           style={{
-            maxHeight: "90vh",
-            // overflowY: "scroll",
-            // "&::-webkit-scrollbar": {
-            //   display: "none",
-            //   width: "0px",
-            //   background: "transparent",
-            // },
+            height: isSmallScreen ? "calc(35vh - 64px)" : "calc(100vh - 128px)",
           }}
         >
-          <div id="container2">
+          <div id="childDiv">
             <TimeLine />
           </div>
         </Grid>
-        <Grid item xs={12} md={9}>
+        <Grid
+          item
+          xs={12}
+          md={9}
+          style={{
+            border: "1px solid red",
+            height: isSmallScreen ? "calc(65vh - 64px)" : "calc(100vh - 128px)",
+          }}
+        >
           <Container>
             <main>{children}</main>
           </Container>
         </Grid>
       </Grid>
-
-      {/* <Copyright /> */}
-      {/* <StickyFooter /> */}
+      <Footer />
     </Container>
   );
 };
