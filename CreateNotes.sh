@@ -28,5 +28,7 @@ title: '$title'
 tag: ''
 location: 'Bath, UK'
 ---
+
+![Westie](./figure1.jpeg)
 " >>  $file
 

@@ -75,7 +75,8 @@ const Layout = ({ children }) => {
           xs={12}
           md={9}
           style={{
-            height: isSmallScreen ? "calc(65vh - 64px)" : "calc(100vh - 128px)",
+            // height: isSmallScreen ? "calc(65vh - 64px)" : "calc(100vh - 128px)",
+            overflowY: "auto",
           }}
         >
           <Container>

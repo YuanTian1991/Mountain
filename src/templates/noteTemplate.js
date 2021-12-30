@@ -19,7 +19,12 @@ export default function Template({
       <SEO title={frontmatter.title} />
       <Paper
         elevation={5}
-        style={{ padding: "2em", backgroundColor: "rgba(245, 245, 245, 0.5)" }}
+        style={{
+          padding: "2em",
+          backgroundColor: "rgba(245, 245, 245, 0.5)",
+          marginTop: "20px",
+          marginBottom: "50px",
+        }}
       >
         <Typography variant="body2">{frontmatter.date}</Typography>
 
@@ -31,7 +36,7 @@ export default function Template({
               xs: 20,
             },
           }}
-          style={{ fontWeight: "900", marginTop: "20px" }}
+          style={{ fontWeight: "900", marginTop: "10px", marginBottom: "10px" }}
         >
           {frontmatter.title}
         </Typography>
