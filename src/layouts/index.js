@@ -17,14 +17,14 @@ import TimeLine from "../components/TimeLine";
 
 const Layout = ({ children }) => {
   const theme = useTheme();
-  const isSmallScreen = !useMediaQuery(theme.breakpoints.up("sm"));
+  const isSmallScreen = !useMediaQuery(theme.breakpoints.up("md"));
 
   useEffect(() => {
     console.log("Reload");
   }, []);
 
   return (
-    <Container maxWidth="xl">
+    <Container maxWidth="lg">
       <Box my={1}>
         <Toolbar>
           <Grid container spacing="1" alignItems="center">
@@ -75,7 +75,6 @@ const Layout = ({ children }) => {
           xs={12}
           md={9}
           style={{
-            border: "1px solid red",
             height: isSmallScreen ? "calc(65vh - 64px)" : "calc(100vh - 128px)",
           }}
         >

@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import { graphql } from "gatsby";
+import { Typography, Paper } from "@mui/material";
+
+import SEO from "../components/note/SEO";
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -13,7 +16,31 @@ export default function Template({
 
   return (
     <div className="blog-post-container">
-      <h2>{frontmatter.title}</h2>
+      <SEO title={frontmatter.title} />
+      <Paper
+        elevation={5}
+        style={{ padding: "2em", backgroundColor: "rgba(245, 245, 245, 0.5)" }}
+      >
+        <Typography variant="body2">{frontmatter.date}</Typography>
+
+        <Typography
+          sx={{
+            fontSize: {
+              lg: 30,
+              md: 30,
+              xs: 20,
+            },
+          }}
+          style={{ fontWeight: "900", marginTop: "20px" }}
+        >
+          {frontmatter.title}
+        </Typography>
+
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </Paper>
     </div>
   );
 }
