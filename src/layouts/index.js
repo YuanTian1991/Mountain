@@ -8,6 +8,7 @@ import {
   Grid,
   Typography,
   useMediaQuery,
+  Button,
 } from "@mui/material";
 
 import "./index.css";
@@ -28,36 +29,35 @@ const Layout = ({ children }) => {
     <Container maxWidth="lg">
       <Box my={1}>
         <Toolbar variant="dense">
-          <Grid container spacing="1" alignItems="center">
-            <Grid item>
-              {" "}
-              <Link
-                to="/"
-                style={{
-                  textDecoration: "none",
-                  color: "black",
-                  fontWeight: "bold",
-                  "&:hover ": {
-                    color: "black",
-                    textDecoration: "none",
-                  },
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  component="span"
-                  style={{
-                    fontWeight: 500,
-                    fontFamily:
-                      "Ubuntu, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif",
-                  }}
-                >
-                  Mountain the Westie
-                </Typography>
-              </Link>
-            </Grid>
-          </Grid>
-          <div></div>
+          <div>{/* <Button>Link</Button> */}</div>
+          <Link
+            to="/"
+            style={{
+              flexGrow: 1,
+              textAlign: "center",
+              textDecoration: "none",
+              color: "black",
+              fontWeight: "bold",
+              "&:hover ": {
+                color: "black",
+                textDecoration: "none",
+              },
+            }}
+          >
+            <Typography
+              variant="h6"
+              component="span"
+              style={{
+                fontWeight: 500,
+                fontFamily:
+                  "Ubuntu, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif",
+              }}
+            >
+              Mountain the Westie
+            </Typography>
+          </Link>
+
+          <div>{/* <Button>Link</Button> */}</div>
         </Toolbar>
       </Box>
 
