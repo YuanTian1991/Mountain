@@ -12,12 +12,12 @@ module.exports = {
         path: `${__dirname}/contents/notes`,
       },
     },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //     pathToConfigModule: `src/utils/typography`,
+    //   },
+    // },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,

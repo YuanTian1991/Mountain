@@ -14,6 +14,7 @@ import "./index.css";
 
 import Footer from "../components/layout/footer";
 import TimeLine from "../components/TimeLine";
+import { fontFamily } from "@mui/system";
 
 const Layout = ({ children }) => {
   const theme = useTheme();
@@ -26,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <Container maxWidth="lg">
       <Box my={1}>
-        <Toolbar>
+        <Toolbar variant="dense">
           <Grid container spacing="1" alignItems="center">
             <Grid item>
               {" "}
@@ -45,7 +46,11 @@ const Layout = ({ children }) => {
                 <Typography
                   variant="h6"
                   component="span"
-                  style={{ fontWeight: 500 }}
+                  style={{
+                    fontWeight: 500,
+                    fontFamily:
+                      "Ubuntu, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif",
+                  }}
                 >
                   Mountain the Westie
                 </Typography>
@@ -74,10 +79,11 @@ const Layout = ({ children }) => {
           item
           xs={12}
           md={9}
-          style={{
-            // height: isSmallScreen ? "calc(65vh - 64px)" : "calc(100vh - 128px)",
-            overflowY: "auto",
-          }}
+          style={
+            {
+              // height: isSmallScreen ? "calc(65vh - 64px)" : "calc(100vh - 128px)",
+            }
+          }
         >
           <Container>
             <main>{children}</main>
@@ -90,16 +96,3 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
-
-const Menu = () => {
-  return (
-    <ul className="menu">
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/notes/The-Two-Year-Birthday">Test</Link>
-      </li>
-    </ul>
-  );
-};

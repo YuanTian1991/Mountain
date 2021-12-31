@@ -20,5 +20,11 @@
 }
 
 img {
-  border-radius: 3px;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 1.9vh;
+  line-height: 1.6;
+  font-family: Ubuntu, "Avenir Next", "Helvetica Neue", "Segoe UI", "Helvetica", "Arial", "sans-serif";
 }

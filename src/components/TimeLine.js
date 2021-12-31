@@ -69,7 +69,12 @@ export default function CustomizedTimeline() {
                 <TimelineContent sx={{ py: "30px", px: 2 }}>
                   <Typography
                     variant="body2"
-                    style={{ fontWeight: "500", cursor: "pointer" }}
+                    style={{
+                      fontWeight: "500",
+                      cursor: "pointer",
+                      fontFamily:
+                        "Ubuntu, Avenir Next, Helvetica Neue, Segoe UI, Helvetica, Arial, sans-serif",
+                    }}
                     onClick={() =>
                       handlePageClick(node.frontmatter.slug, index)
                     }
