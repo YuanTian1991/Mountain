@@ -23,7 +23,7 @@ export default function Template({ data }) {
         elevation={5}
         style={{
           padding: "1.5em",
-          backgroundColor: "rgba(245, 245, 245, 0.5)",
+          backgroundColor: "rgba(245, 245, 245, 0.2)",
           marginTop: "10px",
           // marginBottom: "50px",
           overflowY: "auto",
