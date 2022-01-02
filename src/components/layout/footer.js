@@ -5,8 +5,8 @@ export default function Copyright() {
   return (
     <div
       style={{
-        paddingTop: "10px",
-        paddingBottom: "10px",
+        paddingTop: "1em",
+        paddingBottom: "1em",
         textAlign: "center",
       }}
     >

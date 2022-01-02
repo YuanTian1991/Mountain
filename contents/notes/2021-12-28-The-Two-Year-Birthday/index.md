@@ -6,4 +6,8 @@ icon: ''
 location: 'Bath, UK'
 ---
 
-Mountain's **two year** birthday!
+Mountain's **two year** birthday! On this day, we decided to make a website, to record Mountain's photo and memories. Many things, if we don't remember them on purposly, they will fade quickly.
+
+![Westie](./figure1.jpeg)
+
+We are so glad to see now we have chunky, healthy and calm doggy.

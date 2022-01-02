@@ -29,7 +29,7 @@ export default function Template({ data }) {
           overflowY: "auto",
           maxHeight: isSmallScreen
             ? "calc(65vh - 70px)"
-            : "calc(100vh - 165px)",
+            : "calc(100vh - 185px)",
         }}
       >
         <Typography

@@ -55,9 +55,9 @@ export default function CustomizedTimeline() {
                   align="right"
                   variant="body2"
                   color="text.secondary"
-                  style={{ flex: 0.5, fontWeight: "500" }}
+                  style={{ flex: 0, fontWeight: "500", whiteSpace: "nowrap" }}
                 >
-                  {node.frontmatter.date}
+                  {""}
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />
@@ -82,8 +82,15 @@ export default function CustomizedTimeline() {
                     {node.frontmatter.title}
                   </Typography>
                   <small style={{ color: "#9e9e9e" }}>
-                    {node.frontmatter.location}
+                    {node.frontmatter.date}
                   </small>
+                  <Typography
+                    variant="body2"
+                    style={{ fontSize: "12px", color: "#9e9e9e" }}
+                  >
+                    {node.frontmatter.location !== "" &&
+                      node.frontmatter.location}
+                  </Typography>
                 </TimelineContent>
               </TimelineItem>
             );

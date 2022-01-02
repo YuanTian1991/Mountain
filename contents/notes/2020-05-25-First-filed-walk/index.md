@@ -10,8 +10,4 @@ location: 'Bath, UK'
 
 ![Westie](./figure2.jpeg)
 
-
-
 ![Westie](./figure4.jpeg)
-
-![Westie](./figure3.jpeg)
