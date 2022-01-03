@@ -7,5 +7,3 @@ location: 'Bath, UK'
 ---
 
 ![Westie](./figure1.jpeg)
-
-![Westie](./figure2.jpeg)
