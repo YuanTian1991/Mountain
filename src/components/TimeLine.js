@@ -37,16 +37,16 @@ export default function CustomizedTimeline() {
   };
 
   const icons = {
-    faUserFriends: faUserFriends,
-    faBirthdayCake: faBirthdayCake,
-    faSnowflake: faSnowflake,
-    faPaw: faPaw,
-    faHome: faHome,
-    faShower: faShower,
-    faUmbrellaBeach: faUmbrellaBeach,
-    faMountain: faMountain,
-    faBed: faBed,
-    faCity: faCity,
+    faUserFriends: { icon: faUserFriends, colour: "#ff5722" },
+    faBirthdayCake: { icon: faBirthdayCake, colour: "#bf360c" },
+    faSnowflake: { icon: faSnowflake, colour: "#78909c" },
+    faPaw: { icon: faPaw, colour: "#212121" },
+    faHome: { icon: faHome, colour: "#ffecb3" },
+    faShower: { icon: faShower, colour: "#b3e5fc" },
+    faUmbrellaBeach: { icon: faUmbrellaBeach, colour: "#d7ccc8" },
+    faMountain: { icon: faMountain, colour: "#a5d6a7" },
+    faBed: { icon: faBed, colour: "#b3e5fc" },
+    faCity: { icon: faCity, colour: "#b39ddb" },
   };
 
   return (
@@ -88,10 +88,16 @@ export default function CustomizedTimeline() {
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />
-                  <TimelineDot style={{ width: "17px", height: "17px" }}>
+                  <TimelineDot
+                    style={{
+                      width: "17px",
+                      height: "17px",
+                      backgroundColor: icons[node.frontmatter.icon].colour,
+                    }}
+                  >
                     {/* <FastfoodIcon /> */}
                     <FontAwesomeIcon
-                      icon={icons[node.frontmatter.icon]}
+                      icon={icons[node.frontmatter.icon].icon}
                       style={{ fontSize: "16px" }}
                     />
                   </TimelineDot>
