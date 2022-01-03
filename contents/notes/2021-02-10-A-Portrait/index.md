@@ -6,5 +6,7 @@ tag: ''
 location: 'Bath, UK'
 ---
 
+Mountain has grow up, this is full size I think. Compared with the day he came, now he is chunky, healthy and much lively!
+
 ![Westie](./figure1.jpeg)
 
