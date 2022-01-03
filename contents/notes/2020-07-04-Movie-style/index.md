@@ -2,7 +2,7 @@
 slug: '/notes/Movie-style'
 date: '2020-07-04'
 title: 'Movie style'
-tag: ''
+icon: 'faPaw'
 location: 'Bath, UK'
 ---
 

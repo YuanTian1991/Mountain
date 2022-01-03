@@ -2,7 +2,7 @@
 slug: '/notes/The-snow-walk'
 date: '2021-01-31'
 title: 'The snow walk'
-tag: ''
+icon: 'faSnowflake'
 location: 'Bath, UK'
 ---
 

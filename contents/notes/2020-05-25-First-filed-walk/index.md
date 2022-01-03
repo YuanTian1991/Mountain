@@ -2,7 +2,7 @@
 slug: '/notes/First-filed-walk'
 date: '2020-05-25'
 title: 'First filed walk'
-tag: ''
+icon: 'faMountain'
 location: 'Bath, UK'
 ---
 

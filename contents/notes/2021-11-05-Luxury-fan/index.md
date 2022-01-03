@@ -2,7 +2,7 @@
 slug: '/notes/Luxury-fan'
 date: '2021-11-05'
 title: 'Luxury fan'
-tag: ''
+icon: 'faCity'
 location: 'Milson Street, Bath, UK'
 ---
 

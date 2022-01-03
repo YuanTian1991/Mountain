@@ -12,6 +12,7 @@ module.exports = {
         path: `${__dirname}/contents/notes`,
       },
     },
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images

@@ -2,7 +2,7 @@
 slug: '/notes/Stairs'
 date: '2020-09-20'
 title: 'Stairs'
-tag: ''
+icon: 'faHome'
 location: 'Bath, UK'
 ---
 

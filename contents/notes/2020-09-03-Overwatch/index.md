@@ -2,7 +2,7 @@
 slug: '/notes/Overwatch'
 date: '2020-09-03'
 title: 'Overwatch'
-tag: ''
+icon: 'faPaw'
 location: 'Bath, UK'
 ---
 

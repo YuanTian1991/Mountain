@@ -2,7 +2,7 @@
 slug: '/notes/Poor-little-dog'
 date: '2020-06-28'
 title: 'Poor little dog'
-tag: ''
+icon: 'faHome'
 location: 'Bath, UK'
 ---
 

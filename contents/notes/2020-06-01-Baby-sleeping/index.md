@@ -2,7 +2,7 @@
 slug: '/notes/Baby-sleeping'
 date: '2020-06-01'
 title: 'Baby sleeping'
-tag: ''
+icon: 'faBed'
 location: 'Bath, UK'
 ---
 

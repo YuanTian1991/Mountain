@@ -2,7 +2,7 @@
 slug: '/notes/Happy-day-on-the-field'
 date: '2020-08-31'
 title: 'Happy day on the field'
-tag: ''
+icon: 'faMountain'
 location: 'Bath, UK'
 ---
 

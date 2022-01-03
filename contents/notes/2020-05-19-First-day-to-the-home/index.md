@@ -2,7 +2,7 @@
 slug: '/notes/First-day-to-the-home'
 date: '2020-05-19'
 title: 'First day to the home'
-tag: ''
+icon: 'faHome'
 location: 'Bath, UK'
 ---
 

@@ -2,7 +2,7 @@
 slug: '/notes/Refuse-to-walk'
 date: '2020-06-02'
 title: 'Refuse to walk'
-tag: ''
+icon: 'faPaw'
 location: 'Bath, UK'
 ---
 

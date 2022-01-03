@@ -2,7 +2,7 @@
 slug: '/notes/First-shower-at-home'
 date: '2020-07-17'
 title: 'First shower at home'
-tag: ''
+icon: 'faShower'
 location: 'Bath, UK'
 ---
 

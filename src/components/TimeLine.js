@@ -12,6 +12,20 @@ import {
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import Typography from "@mui/material/Typography";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUserFriends,
+  faBirthdayCake,
+  faSnowflake,
+  faPaw,
+  faHome,
+  faShower,
+  faUmbrellaBeach,
+  faMountain,
+  faBed,
+  faCity,
+} from "@fortawesome/free-solid-svg-icons";
+
 import { StaticQuery, graphql, navigate } from "gatsby";
 
 export default function CustomizedTimeline() {
@@ -20,6 +34,19 @@ export default function CustomizedTimeline() {
   const handlePageClick = (page, index) => {
     setSelectedMoment(index);
     navigate(page);
+  };
+
+  const icons = {
+    faUserFriends: faUserFriends,
+    faBirthdayCake: faBirthdayCake,
+    faSnowflake: faSnowflake,
+    faPaw: faPaw,
+    faHome: faHome,
+    faShower: faShower,
+    faUmbrellaBeach: faUmbrellaBeach,
+    faMountain: faMountain,
+    faBed: faBed,
+    faCity: faCity,
   };
 
   return (
@@ -61,8 +88,12 @@ export default function CustomizedTimeline() {
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineConnector />
-                  <TimelineDot>
-                    <FastfoodIcon />
+                  <TimelineDot style={{ width: "17px", height: "17px" }}>
+                    {/* <FastfoodIcon /> */}
+                    <FontAwesomeIcon
+                      icon={icons[node.frontmatter.icon]}
+                      style={{ fontSize: "16px" }}
+                    />
                   </TimelineDot>
                   <TimelineConnector />
                 </TimelineSeparator>

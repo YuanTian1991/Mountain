@@ -2,7 +2,7 @@
 slug: '/notes/First-grooming-at-pet-shop'
 date: '2020-06-19'
 title: 'First grooming at pet shop'
-tag: ''
+icon: 'faShower'
 location: 'Bath, UK'
 ---
 

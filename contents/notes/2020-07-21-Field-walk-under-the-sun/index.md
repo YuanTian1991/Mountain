@@ -2,7 +2,7 @@
 slug: '/notes/Field-walk-under-the-sun'
 date: '2020-07-21'
 title: 'Field walk under the sun'
-tag: ''
+icon: 'faMountain'
 location: 'Bath, UK'
 ---
 

@@ -2,7 +2,7 @@
 slug: '/notes/Waiting-for-Cat'
 date: '2021-08-27'
 title: 'Waiting for Cat'
-tag: ''
+icon: 'faPaw'
 location: 'Bath, UK'
 ---
 

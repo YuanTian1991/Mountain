@@ -2,7 +2,7 @@
 slug: '/notes/A-slip-on-the-pavement'
 date: '2020-05-25'
 title: 'A slip on the pavement'
-tag: ''
+icon: 'faPaw'
 location: 'Bath, UK'
 ---
 
